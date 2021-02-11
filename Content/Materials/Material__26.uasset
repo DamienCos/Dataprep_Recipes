@@ -1,0 +1,134 @@
+Begin Object Class=/Script/Engine.Material Name="Material__26"
+   Begin Object Class=/Script/DatasmithContent.DatasmithAssetImportData Name="DatasmithAssetImportData_0"
+   End Object
+   Begin Object Class=/Script/DatasmithContent.DatasmithAssetUserData Name="DatasmithAssetUserData_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDesaturation Name="MaterialExpressionDesaturation_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="DatasmithAssetImportData_0"
+      AssetImportOptions=(PackagePath="/Game/DatsmithImports/")
+   End Object
+   Begin Object Name="DatasmithAssetUserData_0"
+      MetaData=(("Datasmith_UniqueId", "Material__26"))
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=0.510000
+      MaterialExpressionEditorX=-260
+      MaterialExpressionEditorY=338
+      MaterialExpressionGuid=B378D3CB44237CDD62689F87CE9F6263
+      Material=Material'"Material__26"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      R=0.600000
+      MaterialExpressionEditorX=-780
+      MaterialExpressionEditorY=514
+      MaterialExpressionGuid=122BFF4F4C647E4474953D9988ED4FE5
+      Material=Material'"Material__26"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_2"
+      R=0.960000
+      MaterialExpressionEditorX=-520
+      MaterialExpressionEditorY=676
+      MaterialExpressionGuid=E67C23CA4C5AFF66715AB1A75C0CD900
+      Material=Material'"Material__26"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      MaterialExpressionEditorX=-780
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=EA9990BB402848EDB6343AAC10E678D1
+      Material=Material'"Material__26"'
+   End Object
+   Begin Object Name="MaterialExpressionDesaturation_0"
+      Input=(Expression=MaterialExpressionLinearInterpolate'"Material__26:MaterialExpressionLinearInterpolate_0"')
+      MaterialExpressionEditorX=-260
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=AF3128634FE44245D91DB18E742A7B81
+      Material=Material'"Material__26"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionTextureSample'"Material__26:MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionConstant3Vector'"Material__26:MaterialExpressionConstant3Vector_0"')
+      Alpha=(Expression=MaterialExpressionConstant'"Material__26:MaterialExpressionConstant_1"')
+      MaterialExpressionEditorX=-520
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=B3FFD384453DB57733868C9F4012D6DB
+      Material=Material'"Material__26"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.FlattenNormal"'
+      FunctionInputs(0)=(ExpressionInputId=28AAF19044840619BEBDFC824A64C7A0,Input=(Expression=MaterialExpressionTextureSample'"Material__26:MaterialExpressionTextureSample_2"',InputName="Normal",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      FunctionInputs(1)=(ExpressionInputId=03CE862F4BD8BFCC0550048115A40E71,Input=(Expression=MaterialExpressionConstant'"Material__26:MaterialExpressionConstant_2"',InputName="Flatness"))
+      FunctionOutputs(0)=(ExpressionOutputId=CF2DF7CD446736F3FF50B0A17088C5A7,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-260
+      MaterialExpressionEditorY=500
+      MaterialExpressionGuid=99A75D174C771F339034EB952BD01168
+      Material=Material'"Material__26"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/DatsmithImports/suita_industrial_sofa1/Textures/39415a7a6cb0c4b0_2_2_Tex.39415a7a6cb0c4b0_2_2_Tex"'
+      MaterialExpressionEditorX=-260
+      MaterialExpressionGuid=F0C132314736140FEC4631AB3DA42F9D
+      Material=Material'"Material__26"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'"/Game/DatsmithImports/suita_industrial_sofa1/Textures/39415a7a6cb0c4b0_2_2_Tex.39415a7a6cb0c4b0_2_2_Tex"'
+      MaterialExpressionEditorX=-780
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=DAD025B2487170C99224DBA9E50E9DA1
+      Material=Material'"Material__26"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Texture=Texture2D'"/Game/DatsmithImports/suita_industrial_sofa1/Textures/39415a7a6cb0c4b0_2_2_Tex_Norm.39415a7a6cb0c4b0_2_2_Tex_Norm"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-520
+      MaterialExpressionEditorY=500
+      MaterialExpressionGuid=4435E335473CF2DB4CF7E4A4358DD298
+      Material=Material'"Material__26"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"')
+   Specular=(Expression=MaterialExpressionDesaturation'"MaterialExpressionDesaturation_0"')
+   Roughness=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_0"')
+   Normal=(Expression=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"')
+   Expressions(0)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(3)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"'
+   Expressions(4)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   Expressions(5)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"'
+   Expressions(6)=MaterialExpressionDesaturation'"MaterialExpressionDesaturation_0"'
+   Expressions(7)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_2"'
+   Expressions(8)=MaterialExpressionConstant'"MaterialExpressionConstant_2"'
+   Expressions(9)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=2382ED8644979C89B24B51A3E79ABECD
+   CachedExpressionData=(ReferencedTextures=(Texture2D'"/Game/DatsmithImports/suita_industrial_sofa1/Textures/39415a7a6cb0c4b0_2_2_Tex.39415a7a6cb0c4b0_2_2_Tex"',Texture2D'"/Game/DatsmithImports/suita_industrial_sofa1/Textures/39415a7a6cb0c4b0_2_2_Tex_Norm.39415a7a6cb0c4b0_2_2_Tex_Norm"'),FunctionInfos=((StateId=FE67B48A44296B30FBF15EBB0FC10ADF,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.FlattenNormal"')),QualityLevelsUsed=(False,True,False))
+   ReferencedTextureGuids(0)=294CC89641F002718B90DDBFFD295301
+   ReferencedTextureGuids(1)=E676B7A94182CC7294C23F8A8B3DE791
+   AssetUserData(0)=DatasmithAssetUserData'"DatasmithAssetUserData_0"'
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   AssetImportData=DatasmithAssetImportData'"DatasmithAssetImportData_0"'
+   LightingGuid=507E041B4D0831BE9CDF9F9FDC07EA61
+End Object
